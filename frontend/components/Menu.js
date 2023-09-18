@@ -5,11 +5,11 @@ function Menu() {
         <Image src={logo} alt="logo" width={90} className={styles.logo} />
       </div>
       <div className={styles.menu}>
-        <div>HOME</div>
-        <div>PROJECTS</div>
-        <div>SKILLS</div>
-        <div>PERSONAdivTY</div>
-        <div>CONTACT</div>
+        <link>HOME</link>
+        <link>PROJECTS</link>
+        <link>SKILLS</link>
+        <link>PERSONALITY</link>
+        <link>CONTACT</link>
       </div>
       <div className={styles.worldCircle}>
           <div className={styles.circle}>
