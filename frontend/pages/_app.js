@@ -1,22 +1,14 @@
-import "../styles/globals.css";
-import Head from "next/head";
-import Header from "../components/Header";
-import Home from "../components/Home";
-import Projects from "../components/Projects";
-import Skills from "../components/Skills";
-import Personality from "../components/Personality";
-import Contact from "../components/Contact";
+import '../styles/globals.css';
+import Head from 'next/head';
 
-function App() {
+function App({ Component, pageProps }) {
   return (
-      <div>
-        <Header />
-        <Home />
-        <Projects />
-        <Skills />
-        <Personality />
-        <Contact />
-      </div>
+    <>
+      <Head>
+        <title>Next.js App</title>
+      </Head>
+      <Component {...pageProps} />
+    </>
   );
 }
 

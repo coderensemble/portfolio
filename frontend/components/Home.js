@@ -2,6 +2,7 @@ import styles from "../styles/Home.module.css";
 import Image from "next/image";
 import world from "../asset/world.svg";
 import circle from "../asset/Circle.png";
+import React from "react";
 
 function Home() {
   return (
