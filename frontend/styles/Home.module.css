@@ -8,9 +8,9 @@
 }
 
 .main {
-  min-height: 100vh;
-  max-height: 100vh;
-  padding: 4rem 0;
+  height: 100vh;
+  width: 100vw;
+  padding: 0rem 0;
   text-align: center;
   justify-content: center;
   align-items: center;
@@ -18,33 +18,33 @@
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 10% 10% 10% 10%;
   gap: 0px 0px;
+  position: relative;
+  overflow: hidden;
 }
 
 .ellipse1 {
-  width: 53.1985rem;
-  height: 52.98375rem;
+  width: 80vw;
+  height: 80vh;
   transform: rotate(-145deg);
-  flex-shrink: 0;
   border-radius: 53.1985rem;
   background: radial-gradient(50% 50% at 50% 50%, rgba(46, 196, 182, 0.4) 0%, rgba(203, 243, 240, 0.16) 100%);
   backdrop-filter: blur(2px);
-  grid-row-start: 1;
+  grid-row-start: 0;
   grid-row-end: 1;
-  grid-column-start: 1;
-  grid-column-end: 1;
+  grid-column-start: 0;
+  grid-column-end: 0;
 }
 
 .ellipse2 {
   width: 53.1985rem;
   height: 52.98375rem;
   transform: rotate(-145deg);
-  flex-shrink: 0;
   border-radius: 53.1985rem;
   background: radial-gradient(50% 50% at 50% 50%, rgba(255, 191, 105, 0.4) 0%, rgba(255, 191, 105, 0) 100%);
   backdrop-filter: blur(2px);
-  grid-row-start: 4;
-  grid-row-end: 4;
-  grid-column-start: 4;
+  grid-row-start: 3;
+  grid-row-end: 3;
+  grid-column-start: 3;
   grid-column-end: 4;
 }
 
@@ -59,12 +59,11 @@
   z-index: 1;
 }
 .worldCircle {
-  position: absolute;
+  position: absolute; 
   display: flex;
   align-items: center;
   justify-content: center;
   z-index: 0;
-  bottom: 20%;
 }
 
 .circle {

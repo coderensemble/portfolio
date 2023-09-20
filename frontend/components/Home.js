@@ -17,10 +17,10 @@ function Home() {
             <div>Feel free to take a look at my latest projects.</div>
           </div>
           <div className={styles.circle}>
-            <Image src={circle} alt="pitchPortfolio" />
+            <Image src={circle} alt="pitchPortfolio" style={{ width: '80%', height: '80%'}} />
           </div>
           <div className={styles.world}>
-            <Image src={world} alt="worldPict" style={{ width: '90%' }}/>
+            <Image src={world} alt="worldPict" style={{ width: '80%' }}/>
           </div>
         </div>
       </main>
