@@ -22,7 +22,7 @@ function Menu() {
         </div>
         <div className={styles.worldCircle}>
           <div className={styles.circle}>
-            <Image src={circle} alt="pitchPortfolio" />
+            <Image src={circle} alt="circle" />
           </div>
           <div className={styles.world}>
             <Image src={world} alt="worldPict" />

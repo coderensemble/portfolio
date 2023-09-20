@@ -3,7 +3,7 @@
     transform: rotate(0deg); /* Rotation de départ (0 degré) */
   }
   to {
-    transform: rotate(360deg); /* Rotation finale (360 degrés) */
+    transform: rotate(-360deg); /* Rotation finale (360 degrés) */
   }
 }
 
