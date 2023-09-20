@@ -10,15 +10,38 @@ function Menu() {
   return (
     <div className={styles.all}>
       <div className={styles.header}>
-        <Link href="/"><Image src={logo} alt="logo" width={90} className={styles.logo} /></Link>
+        <Link href="/">
+          <Image src={logo} alt="logo" width={90} className={styles.logo} />
+        </Link>
       </div>
       <div className={styles.main}>
+        <div className={styles.ellipse1}></div>
         <div className={styles.menu}>
-          <Link href="/"><div>HOME</div></Link>
-          <div><Link href="/#section1">PROJECTS</Link></div>
-          <div><Link href="/#section2">SKILLS</Link></div>
-          <div><Link href="/#section3">PERSONALITY</Link></div>
-          <div><Link href="/#section4">CONTACT</Link></div>
+          <div>
+            <Link href="/" className={styles.section}>
+              HOME
+            </Link>
+          </div>
+          <div>
+            <Link href="/#section1" className={styles.section}>
+              PROJECTS
+            </Link>
+          </div>
+          <div>
+            <Link href="/#section2" className={styles.section}>
+              SKILLS
+            </Link>
+          </div>
+          <div>
+            <Link href="/#section3" className={styles.section}>
+              PERSONALITY
+            </Link>
+          </div>
+          <div>
+            <Link href="/#section4" className={styles.section}>
+              CONTACT
+            </Link>
+          </div>
         </div>
         <div className={styles.worldCircle}>
           <div className={styles.circle}>
