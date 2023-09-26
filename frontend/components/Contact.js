@@ -1,32 +1,66 @@
+import React, { useState, useEffect } from "react";
 import styles from "../styles/Contact.module.css";
 import Image from "next/image";
 import satellite from "../asset/bWcrOF01.svg";
-import React, { useState, useEffect } from "react";
-
+import github from "../asset/github.png";
+import linkedin from "../asset/linkedin.png";
 
 function Contact() {
-  const [position, setPosition] = useState({ x: 0, y: 0 });
-  const updatePosition = (e) => {
-    const newX = e.clientX; // Coordonnée X basée sur la position horizontale de la souris
-    const newY = e.clientY; // Coordonnée Y basée sur la position verticale de la souris
-    setPosition({ x: newX, y: newY });
+  const [scrollPosition, setScrollPosition] = useState(0);
+
+  const handleScroll = () => {
+    const currentPosition = window.scrollY;
+    setScrollPosition(currentPosition);
   };
 
   useEffect(() => {
-    window.addEventListener("mousemove", updatePosition);
+    window.addEventListener("scroll", handleScroll);
     return () => {
-      window.removeEventListener("mousemove", updatePosition);
+      window.removeEventListener("scroll", handleScroll);
     };
   }, []);
 
+  // Calculer la position horizontale en fonction de la position de défilement
+  const horizontalPosition = scrollPosition * 0.25; // Vous pouvez ajuster la vitesse
+
   return (
     <div className={styles.body}>
-      <div>CONTACT</div>
-      <Image src={satellite} alt="satellite" style={{
-          position: "absolute", // Position absolue pour permettre le suivi du curseur
-          left: `${position.x}px`, // Coordonnée X basée sur la position horizontale du curseur
-          top: `${position.y}px`, // Coordonnée Y basée sur la position verticale du curseur
-        }}/>
+      <div className={styles.textContainer}>
+        <h2 className={styles.title}>Let's Work Together!</h2>
+        <div className={styles.inputContainer}>
+          <input
+            className={styles.input}
+            type="text"
+            placeholder="Your Name"
+          />
+          <input
+            className={styles.input}
+            type="email"
+            placeholder="Your Email"
+          />
+          <textarea
+            className={styles.textarea}
+            placeholder="Your Message"
+          ></textarea>
+          <button className={styles.button}>Send Message</button>
+        </div>
+        <div className={styles.socialLinks}>
+          <a href="#" className={styles.socialLink}>
+            <Image src={github} alt="GitHub" height={38}/>
+          </a>
+          <a href="#" className={styles.socialLink}>
+            <Image src={linkedin} alt="LinkedIn" height={38} />
+          </a>
+        </div>
+      </div>
+      <Image
+        src={satellite}
+        alt="Satellite"
+        className={styles.satellite}
+        style={{
+          left: `${horizontalPosition}px`,
+        }}
+      />
     </div>
   );
 }

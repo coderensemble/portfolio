@@ -16,7 +16,11 @@ function Skills() {
     };
   }, []);
 
-  const parallaxOffset = scrollY * 0.1;
+  const parallaxOffset = scrollY * 0.15;
+
+  const ellipseStyle = {
+    backdropFilter: 'blur(2px)'
+  };
 
   return (
     <div className={styles.body}>
@@ -44,7 +48,7 @@ function Skills() {
           <h1 className={styles.title7}>EXPO / VERCEL</h1> <div className={styles.ellipse7}></div>
         </div>
         </div>
-        <div className={styles.bigEllipse}></div>
+        <div className={styles.bigEllipse} style={ellipseStyle}></div>
       </div>
     </div>
   );
