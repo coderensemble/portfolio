@@ -1,0 +1,83 @@
+@keyframes rotate {
+  from {
+    transform: rotate(0deg); /* Rotation de départ (0 degré) */
+  }
+  to {
+    transform: rotate(-360deg); /* Rotation finale (360 degrés) */
+  }
+}
+
+.all {
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+  width: 100vw;
+}
+
+.header {
+  position: sticky;
+  top: 5%;
+  justify-content: space-between;
+  display: flex;
+  margin: 1% 5%;
+  z-index: 999;
+}
+
+.logo {
+  justify-content: space-between;
+}
+
+.main {
+  display: flex;
+  padding: 4rem 0;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu {
+  position: absolute;
+  bottom: 20%;
+  text-align: left;
+  z-index: 999;
+}
+
+.ellipse1 {
+  position: absolute;
+  width: 80vw;
+  height: 80vh;
+  transform: rotate(-145deg);
+  border-radius: 53rem;
+  background: radial-gradient(50% 50% at 50% 50%, rgba(64, 67, 66, 0.4) 0%, rgba(203, 243, 240, 0.16) 100%);
+  backdrop-filter: blur(2px);
+  left: 40%;
+}
+
+.section {
+  color: #000;
+  font-family: Quicksand;
+  font-size: 5rem;
+  line-height: 1.5;
+  text-decoration: none;
+}
+
+.worldCircle {
+  position: absolute;
+  display: flex;
+  z-index: 0;
+  left: -15%;
+  bottom: 50%;
+}
+
+.circle {
+  position: absolute;
+  animation: rotate 30s linear infinite;
+  left: 1.5vw;
+}
+
+.world {
+  position: absolute;
+  top: 5.5vh;
+  left: 4.5vw;
+}

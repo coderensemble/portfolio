@@ -1,0 +1,215 @@
+.body {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background-color: #ffd295;
+  background-image: url("../asset/gettyimages-1283307885-1024x1024\ 1.png");
+  overflow: hidden;
+  transform: translateY(0);
+}
+
+.container {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+}
+
+.textAndStar1 {
+  position: absolute;
+  top: 60%;
+  left: 5%;
+}
+
+.title1 {
+  color: rgb(0, 0, 0);
+  font-size: 5rem;
+  font-family: Quicksand;
+}
+
+.ellipse1 {
+  width: 3rem;
+  height: 3rem;
+  background: radial-gradient(50% 50% at 50% 50%, #fff 0%, rgba(255, 191, 105, 0) 100%);
+}
+
+.textAndStar2 {
+  position: absolute;
+  top: 20%;
+  left: 20%;
+}
+
+.title2 {
+  color: rgb(0, 0, 0);
+  font-size: 5rem;
+  font-family: Quicksand;
+}
+
+.ellipse2 {
+  width: 6rem;
+  height: 6rem;
+  transform: rotate(-145deg);
+  flex-shrink: 0;
+  border-radius: 53rem;
+  background: radial-gradient(50% 50% at 50% 50%, #fff 0%, rgba(255, 191, 105, 0) 100%);
+  backdrop-filter: blur(2px);
+}
+
+.textAndStar3 {
+  position: absolute;
+  left: 35%;
+  top: 25%;
+}
+
+.title3 {
+  color: rgb(0, 0, 0);
+  font-size: 5rem;
+  font-family: Quicksand;
+}
+
+.ellipse3 {
+  width: 4rem;
+  height: 4rem;
+  transform: rotate(-145deg);
+  flex-shrink: 0;
+  border-radius: 53rem;
+  background: radial-gradient(50% 50% at 50% 50%, #fff 0%, rgba(255, 191, 105, 0) 100%);
+  backdrop-filter: blur(2px);
+}
+
+.textAndStar4 {
+  position: absolute;
+  left: 50%;
+  top: 21%;
+}
+
+.title4 {
+  color: rgb(0, 0, 0);
+  font-size: 5rem;
+  font-family: Quicksand;
+}
+
+.ellipse4 {
+  width: 3rem;
+  height: 3rem;
+  transform: rotate(-145deg);
+  flex-shrink: 0;
+  border-radius: 53rem;
+  background: radial-gradient(50% 50% at 50% 50%, #fff 0%, rgba(255, 191, 105, 0) 100%);
+  backdrop-filter: blur(2px);
+}
+
+.textAndStar5 {
+  position: absolute;
+  left: 58%;
+  top: 45%;
+}
+
+.title5 {
+  color: rgb(0, 0, 0);
+  font-size: 5rem;
+  font-family: Quicksand;
+}
+
+.ellipse5 {
+  width: 2rem;
+  height: 2rem;
+  transform: rotate(-145deg);
+  flex-shrink: 0;
+  border-radius: 53rem;
+  background: radial-gradient(50% 50% at 50% 50%, #fff 0%, rgba(255, 191, 105, 0) 100%);
+  backdrop-filter: blur(2px);
+}
+
+.textAndStar6 {
+  position: absolute;
+  left: 80%;
+  top: 20%;
+}
+
+.title6 {
+  color: rgb(0, 0, 0);
+  font-size: 5rem;
+  font-family: Quicksand;
+}
+
+.ellipse6 {
+  width: 3rem;
+  height: 3rem;
+  transform: rotate(-145deg);
+  flex-shrink: 0;
+  border-radius: 53rem;
+  background: radial-gradient(50% 50% at 50% 50%, #fff 0%, rgba(255, 191, 105, 0) 100%);
+  backdrop-filter: blur(2px);
+}
+
+.textAndStar7 {
+  position: absolute;
+  left: 75%;
+  top: 10%;
+}
+
+.title7 {
+  position: absolute;
+  color: rgb(0, 0, 0);
+  font-size: 5rem;
+  font-family: Quicksand;
+  top: 40%;
+  right: 75%;
+}
+
+.ellipse7 {
+  width: 4rem;
+  height: 4rem;
+  transform: rotate(-145deg);
+  flex-shrink: 0;
+  border-radius: 53rem;
+  background: radial-gradient(50% 50% at 50% 50%, #fff 0%, rgba(255, 191, 105, 0) 100%);
+  backdrop-filter: blur(2px);
+}
+
+.title1,
+.title2,
+.title3,
+.title4,
+.title5,
+.title6,
+.title7 {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.ellipse1,
+.ellipse2,
+.ellipse3,
+.ellipse4,
+.ellipse5,
+.ellipse6,
+.ellipse7 {
+  z-index: 999;
+}
+
+.textAndStar1:hover .title1,
+.textAndStar2:hover .title2,
+.textAndStar3:hover .title3,
+.textAndStar4:hover .title4,
+.textAndStar5:hover .title5,
+.textAndStar6:hover .title6,
+.textAndStar7:hover .title7 {
+  opacity: 1;
+  position: absolute;
+  z-index: 998;
+}
+
+.bigEllipse {
+  position:absolute;
+  width: 70rem;
+  height: 18rem;
+  transform: rotate(-130deg);
+  flex-shrink: 0;
+  border-radius: 70%;
+  background: radial-gradient(50% 50% at 67.59% -10.17%, rgba(255, 255, 255, 0.4) 0%, rgba(255, 209, 148, 0.36) 100%);
+  backdrop-filter: blur(2px);
+  top: 34%;
+  left: 35%;
+  z-index: 997;
+}

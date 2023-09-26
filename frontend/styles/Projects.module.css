@@ -1,0 +1,58 @@
+
+
+.body {
+  position: relative;
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  background-image: url("../asset/gettyimages-1283307885-1024x1024\ 1.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.carousel {
+  position: absolute;
+  left: 12%;
+  margin-top: 10%;
+  width: 80vw;
+  height: 100vw;
+  transform: rotate(-8deg);
+  display:inline;
+}
+
+.carouselItem {
+  position: flex;
+  width: 100vw; 
+  height: 50vh; 
+  margin: 0; 
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.carouselItem img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+}
+
+.imageTitle {
+  position: absolute;
+  top: 60vh;
+  bottom: 0;
+  left: 40vw;
+  right: 0;
+  color: #fff; 
+  padding: 5px;
+  text-align: center;
+  opacity: 0; 
+  transform: rotate(8deg);
+  font-family: Dancing Script;
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.carouselItem:hover .imageTitle {
+  opacity: 1; 
+  transition: opacity 0.3s ease; 
+}

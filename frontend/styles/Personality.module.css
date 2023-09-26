@@ -1,0 +1,59 @@
+.body {
+  position: relative;
+  width: 100vw;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+}
+
+.textContainer {
+  position: absolute;
+  display: flex;
+  height: 40vh;
+  width: 30vw;
+  background: rgba(129, 129, 129, 0.2);
+  backdrop-filter: blur(3px);
+  left: 55vw;
+  top: 40vh;
+  z-index: 996;
+}
+
+.text {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  height: 40vh;
+  width: 25vw;
+  text-align: center;
+  left: 57vw;
+  top: 42vh;
+  z-index: 999;
+  font-size: 4rem;
+}
+
+.bigEllipse1 {
+  position: absolute;
+  width: 70rem;
+  height: 18rem;
+  transform: rotate(130deg);
+  flex-shrink: 0;
+  border-radius: 70%;
+  background: radial-gradient(50% 50% at 50% 50%, rgba(255, 255, 255, 0.4) 0%, rgba(203, 243, 240, 0.4) 100%);
+  backdrop-filter: blur(2px);
+  top: 34%;
+  left: 35%;
+  z-index: 997;
+}
+
+.bigEllipse2 {
+  position: absolute;
+  width: 117.76425rem;
+  height: 40.63156rem;
+  transform: rotate(-145deg);
+  flex-shrink: 0;
+  border-radius: 117.76425rem;
+  background: radial-gradient(50% 50% at 50% 50%, rgba(255, 255, 255, 0.4) 0%, rgba(203, 243, 240, 0.4) 100%);
+  backdrop-filter: blur(2px);
+  left: 25%;
+  z-index: 998;
+}
