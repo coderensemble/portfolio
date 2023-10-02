@@ -4,12 +4,16 @@ import Projects from "../components/Projects";
 import Skills from "../components/Skills";
 import Personality from "../components/Personality";
 import Contact from "../components/Contact";
+// import Intro from "../components/Intro";
 import React from "react";
 
 function Index() {
   return (
     <div>
-      <Header />
+      {/* <div><Intro /></div> */}
+      <div>
+        <Header />
+      </div>
       <div>
         <Home />
       </div>
